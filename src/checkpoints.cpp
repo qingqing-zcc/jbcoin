@@ -40,7 +40,13 @@ namespace Checkpoints
         ( 175000, uint256("0x0000003cbc2a1413005efdcb00a29459f168f35cccdac3eb85e2335d9ebfb40a"))             
         ( 180000, uint256("0x0000006d79243f8b170d4e12825323dc514fbd3825b76f899c844bc730cb6f5e"))             
         ( 185000, uint256("0x000000299a6830aa5a97adee9b23c9e5006d94656d1018ab5007f5eb4ab48d0e")) 	
-        ( 190000, uint256("0x0000001cd24bd54e35f30c142ae313d7622363f5b100b9ae4c3a07d3c572aea1"))		
+        ( 190000, uint256("0x0000001cd24bd54e35f30c142ae313d7622363f5b100b9ae4c3a07d3c572aea1"))
+        ( 200000, uint256("0x0000001484973aceb228e5d5c2e3626de3aac97edab10c3a36868cb8a729e9b1"))             
+        ( 210000, uint256("0x0000001d53f3b96ebcca0f6a9ab2c77408642ca00ec1b4e8ea044ddbf87c39ae"))             
+        ( 220000, uint256("0x0000000c51baf22d08986dbd8af6bd7c7daf12cefdf5b43b795ba687e2d05877")) 	
+        ( 230000, uint256("0x0000000114bdb81eb76218603cc5fdfe6bf0629ff09996c1fe7ff8b272d6fed5"))
+        ( 240000, uint256("0x0000005ce1dbd47a8eab4f90a6a99d8b781027f6ae0352153d88523f6a3be5c0"))             
+        ( 250000, uint256("0x00000035492a9e46ba21a122902ef9d6cb971d97d6c278e98c412816900451e0")) 			
         ;
 
     static MapCheckpoints mapCheckpointsTestnet =
@@ -381,7 +387,7 @@ namespace Checkpoints
 
 // ppcoin: sync-checkpoint master key
 //const std::string CSyncCheckpoint::strMasterPubKey = "04a51b735f816de4ec3f891d5b38bbc91e1f7245c7c08d17990760b86b4d8fc3910a850ffecf73bfa8886f01739a0c4c4322201282d07b6e48ce931cc92af94850";
-const std::string CSyncCheckpoint::strMasterPubKey = "0428C56933CCEEAADAEF3D9EBB65E45905ED3AA04181B4A75096DB2CD3A43B98AC256AEDBF961582718ED42CB745A42369C655F8EF4026FFC990A07556FB960E77";
+const std::string CSyncCheckpoint::strMasterPubKey = "04f621ae32bbe02367d0dd72ea6375a13a967bc57980c6067803b9d27e6219695eca496b1cefdd595bbb10ae5019cd6a8d423b845252c8cd152098cdad98ae12ef";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
