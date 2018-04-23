@@ -326,7 +326,7 @@ bool CheckStakeKernelHash(unsigned int nBits, const CBlock& blockFrom, unsigned 
 // Check kernel hash target and coinstake signature
 bool CheckProofOfStake(const CTransaction& tx, unsigned int nBits, uint256& hashProofOfStake)
 {
-    if (!tx.IsCoinStake())
+    /*if (!tx.IsCoinStake())
         return error("CheckProofOfStake() : called on non-coinstake %s", tx.GetHash().ToString().c_str());
 
     // Kernel (input 0) must match the stake hash target per coin age (nBits)
@@ -351,7 +351,7 @@ bool CheckProofOfStake(const CTransaction& tx, unsigned int nBits, uint256& hash
 
     if (!CheckStakeKernelHash(nBits, block, txindex.pos.nTxPos - txindex.pos.nBlockPos, txPrev, txin.prevout, tx.nTime, hashProofOfStake, fDebug))
         return tx.DoS(1, error("CheckProofOfStake() : INFO: check kernel failed on coinstake %s, hashProof=%s", tx.GetHash().ToString().c_str(), hashProofOfStake.ToString().c_str())); // may occur during initial download or if behind on block chain sync
-
+*/
     return true;
 }
 
