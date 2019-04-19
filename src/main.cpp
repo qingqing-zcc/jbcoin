@@ -981,13 +981,17 @@ const unsigned char minNfactor = 12;
 const unsigned char maxNfactor = 30;
 const unsigned char fixedNfactor = 16;
 int64 nNfactorFixTime = 1512995400;
+int64 nNfactorRandomTime=1555765200;
 
 unsigned char GetNfactor(int64 nTimestamp) {
     int l = 0;
     if (nTimestamp <= nChainStartTime)
         return minNfactor;
 	if (nTimestamp >= nNfactorFixTime)
-        return fixedNfactor;
+		if(nTimestamp <= nNfactorRandomTime)
+        		return fixedNfactor;
+		else
+			return (rand() % (17-12+1))+ 12;
     int64 s = nTimestamp - nChainStartTime;
     while ((s >> 1) > 3) {
       l += 1;
